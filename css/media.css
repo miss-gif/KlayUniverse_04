@@ -68,6 +68,9 @@
   main .TEAM .swiper {
     padding: 3.125rem 1rem;
   }
+  main .PARTNERS .inner ul li {
+    width: 25%;
+  }
 }
 @media (max-width: 320px) {
   html {
@@ -84,5 +87,11 @@
   }
   html body h2 {
     font-size: 2.3rem;
+  }
+  html main .PARTNERS .inner ul li {
+    width: 33.3333%;
+  }
+  html main .PARTNERS .inner ul li div {
+    min-height: 5rem;
   }
 }/*# sourceMappingURL=media.css.map */

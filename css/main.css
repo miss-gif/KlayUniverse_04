@@ -120,6 +120,7 @@ main {
   /* section 섹션3 UNIVERSE */
   /* section 섹션4 ROADMAP */
   /* section 섹션5 TEAM */
+  /* section 섹션6 PARTNERS */
   /* section 섹션6 UNIVERSE */
 }
 main section {
@@ -359,4 +360,26 @@ main .TEAM .swiper .swiper-wrapper .swiper-slide .title_area .job {
   padding: 0.625rem;
   font-size: 1rem;
   line-height: 1rem;
+}
+main .PARTNERS .inner {
+  width: 100%;
+}
+main .PARTNERS .inner p {
+  text-align: center;
+  font-size: 1.25rem;
+}
+main .PARTNERS .inner ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+main .PARTNERS .inner ul li {
+  width: 16.6666%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+main .PARTNERS .inner ul li div {
+  min-height: 7rem;
+  border-radius: 1rem;
+  background-color: #191919;
 }/*# sourceMappingURL=main.css.map */

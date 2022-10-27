@@ -142,6 +142,7 @@ header {
 /* main 메인 */
 
 main {
+
   /* section 공통 */
   section {
     position: relative;
@@ -185,7 +186,7 @@ main {
       z-index: -2;
     }
 
-    > h2 {
+    >h2 {
       font-size: 4.5rem;
       font-weight: 600;
       line-height: 1.5;
@@ -197,7 +198,7 @@ main {
       }
     }
 
-    > .mouseScroll {
+    >.mouseScroll {
       position: absolute;
       bottom: 1.875rem;
       width: 0.625rem;
@@ -205,7 +206,7 @@ main {
       align-items: center;
       flex-direction: column;
 
-      > img {
+      >img {
         margin: 0.25rem;
         animation-name: move; // 애니메이션 명
         animation-duration: 0.4s; // 완료까지 걸리는 시간 설정
@@ -220,7 +221,7 @@ main {
         }
       }
 
-      > p {
+      >p {
         margin-top: 0.375rem;
         color: rgba(#5cffc0, 0.3);
       }
@@ -283,8 +284,8 @@ main {
     }
   }
 
-   /* section 섹션4 ROADMAP */
-   .ROADMAP {    
+  /* section 섹션4 ROADMAP */
+  .ROADMAP {
     &::after {
       content: "";
       position: absolute;
@@ -384,8 +385,8 @@ main {
   }
 
 
-   /* section 섹션5 TEAM */
-   .TEAM {
+  /* section 섹션5 TEAM */
+  .TEAM {
     >p {
       font-size: 1.25rem;
       line-height: 2;
@@ -431,6 +432,35 @@ main {
       }
     }
   }
-  
-   /* section 섹션6 UNIVERSE */
+
+  /* section 섹션6 PARTNERS */
+  .PARTNERS {
+    .inner {
+      width: 100%;
+    p {
+      text-align: center;
+      font-size: 1.25rem;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 32px;
+
+      li {
+        width: 16.6666%;
+        box-sizing: border-box;
+        padding: 0.5rem;
+
+        div {
+          min-height: 7rem;
+          border-radius: 1rem;
+          background-color: #191919;
+        }
+      }
+    }}
+
+  }
+
+  /* section 섹션6 UNIVERSE */
 }
