@@ -26,12 +26,6 @@
   main .mainVisual > h2 {
     font-size: 1.875rem;
   }
-  main .mainVisual a {
-    width: 13rem;
-    height: 2.6875rem;
-    font-size: 0.9375rem;
-    transition: 0s;
-  }
   main .mainVisual > .mouseScroll > p {
     font-size: 0.75rem;
   }
@@ -45,5 +39,11 @@
   }
   html body .inner {
     width: 100%;
+  }
+  html body .row {
+    padding: 0 1rem;
+  }
+  html body h2 {
+    font-size: 2.6rem;
   }
 }/*# sourceMappingURL=media.css.map */
