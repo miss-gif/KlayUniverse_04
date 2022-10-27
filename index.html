@@ -16,6 +16,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <!-- CDN으로 Swiper 연결 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 슬라이드 JS -->
+    <script defer src="./js/slide.js"></script>
+    <!-- JS -->
+    <script defer src="./js/main.js"></script>
   </head>
 
   <body>
@@ -46,7 +53,6 @@
         </div>
       </div>
     </header>
-    <!-- //header 헤더 -->
 
     <!-- main 메인 -->
     <main>
@@ -74,20 +80,53 @@
           Each KLAY UNIVERSE NFT is an explorable, <br />
           limitless world that can be built into anything you can imagine.
         </p>
+        <div class="swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <!-- <video autoplay muted loop src="./video/universe01.mp4"></video> -->
+              <img src="./img/universe/universe_01.png" alt="universe_01" />
+              <p>UNIVERSE <span>01</span></p>
+            </li>
+            <li class="swiper-slide">
+              <!-- <video autoplay muted loop src="./video/universe02.mp4"></video> -->
+              <img src="./img/universe/universe_02.png" alt="universe_02" />
+              <p>UNIVERSE <span>02</span></p>
+            </li>
+            <li class="swiper-slide">
+              <!-- <video autoplay muted loop src="./video/universe03.mp4"></video> -->
+              <img src="./img/universe/universe_03.png" alt="universe_03" />
+              <p>UNIVERSE <span>03</span></p>
+            </li>
+            <li class="swiper-slide">
+              <!-- <video autoplay muted loop src="./video/universe04.mp4"></video> -->
+              <img src="./img/universe/universe_04.png" alt="universe_04" />
+              <p>UNIVERSE <span>04</span></p>
+            </li>
+            <li class="swiper-slide">
+              <!-- <video autoplay muted loop src="./video/universe05.mp4"></video> -->
+              <img src="./img/universe/universe_05.png" alt="universe_05" />
+              <p>UNIVERSE <span>05</span></p>
+            </li>
+            <li class="swiper-slide">
+              <!-- <video autoplay muted loop src="./video/universe06.mp4"></video> -->
+              <img src="./img/universe/universe_06.png" alt="universe_06" />
+              <p>UNIVERSE <span>06</span></p>
+            </li>
+          </ul>
+        </div>
         <a href="#" class="btnStyle">Buy on Opensea</a>
       </section>
+
       <section>1</section>
       <section>1</section>
       <section>1</section>
     </main>
-    <!-- //main 메인 -->
 
-    <!-- footer -->
+    <!-- footer 푸터 -->
     <footer>
       <div class="inner">
         <div class="row"></div>
       </div>
     </footer>
-    <!-- //footer -->
   </body>
 </html>

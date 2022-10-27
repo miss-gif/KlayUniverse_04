@@ -7,6 +7,7 @@ html {
     font-size: 1rem;
     font-weight: 400;
     background-color: #101010;
+    background-color: orange; // 임시코드
     color: #fff;
 
     main {
@@ -56,12 +57,12 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
-    }
 
-    .btnStyle:hover {
-      background: linear-gradient(to right, #31f8ab, #39c2ee);
-      border: transparent;
-      color: #101010;
+      &:hover {
+        background: linear-gradient(to right, #31f8ab, #39c2ee);
+        border: transparent;
+        color: #101010;
+      }
     }
   }
 }
@@ -72,7 +73,7 @@ html {
   align-items: center;
 }
 
-/* header 시작 */
+/* header 헤더 */
 
 header {
   position: fixed;
@@ -137,8 +138,7 @@ header {
   }
 }
 
-/* header 종료 */
-
+/* main 메인 */
 
 main {
   section {
@@ -157,6 +157,7 @@ main {
     }
   }
 
+  /* section 섹션1 mainVisual */
   .mainVisual {
     z-index: 1;
 
@@ -182,8 +183,7 @@ main {
       z-index: -2;
     }
 
-    
-    >h2 {
+    > h2 {
       font-size: 4.5rem;
       font-weight: 600;
       line-height: 1.5;
@@ -195,7 +195,7 @@ main {
       }
     }
 
-    >.mouseScroll {
+    > .mouseScroll {
       position: absolute;
       bottom: 1.875rem;
       width: 0.625rem;
@@ -203,7 +203,7 @@ main {
       align-items: center;
       flex-direction: column;
 
-      >img {
+      > img {
         margin: 0.25rem;
         animation-name: move; // 애니메이션 명
         animation-duration: 0.4s; // 완료까지 걸리는 시간 설정
@@ -218,23 +218,70 @@ main {
         }
       }
 
-      >p {
+      > p {
         margin-top: 0.375rem;
         color: rgba(#5cffc0, 0.3);
       }
     }
-  
   }
 
+  /* section 섹션2 PROMO */
   .PROMO {
     video {
       width: 100%;
     }
   }
 
+  /* section 섹션3 UNIVERSE */
+  .UNIVERSE {
+    p {
+      text-align: center;
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
 
+    .swiper {
+      width: 100%;
+      padding: 3.125rem 0;
+      padding-left: 1rem; // 추가코드
+      box-sizing: border-box;
 
+      .swiper-wrapper {
+        .swiper-slide {
+          box-sizing: border-box;
+          padding: 0.9375rem 0.9375rem 0 0.9375rem;
+          border-radius: 1rem;
+          background-color: #000;
 
+          img {
+            width: 100%;
+            border-radius: 0.75rem;
+          }
 
+          video {
+            width: 100%;
+            border-radius: 0.75rem;
+          }
 
+          p {
+            font-size: 1rem;
+            padding: 0.3125rem;
+            margin-bottom: 0;
+
+            span {
+              color: #5cffc0;
+            }
+          }
+        }
+      }
+    }
+
+    a {
+      margin-top: 3.75rem;
+    }
+  }
+
+   /* section 섹션4 UNIVERSE */
+   /* section 섹션5 UNIVERSE */
+   /* section 섹션6 UNIVERSE */
 }

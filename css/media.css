@@ -26,8 +26,11 @@
   main .mainVisual > h2 {
     font-size: 1.875rem;
   }
-  main .mainVisual > .mouseScroll > p {
+  main .mainVisual > p {
     font-size: 0.75rem;
+  }
+  main .UNIVERSE .swiper {
+    padding: 3.125rem 1rem;
   }
 }
 @media (max-width: 320px) {
@@ -44,6 +47,6 @@
     padding: 0 1rem;
   }
   html body h2 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 }/*# sourceMappingURL=media.css.map */

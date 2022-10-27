@@ -8,6 +8,7 @@ html body {
   font-size: 1rem;
   font-weight: 400;
   background-color: #101010;
+  background-color: orange;
   color: #fff;
 }
 html body main {
@@ -57,7 +58,7 @@ html body .btnStyle:hover {
   color: #101010;
 }
 
-/* header 시작 */
+/* header 헤더 */
 header {
   position: fixed;
   width: 100%;
@@ -110,7 +111,15 @@ header .header nav .menu li a:hover {
   color: #5cffc0;
 }
 
-/* header 종료 */
+/* main 메인 */
+main {
+  /* section 섹션1 mainVisual */
+  /* section 섹션2 PROMO */
+  /* section 섹션3 UNIVERSE */
+  /* section 섹션4 UNIVERSE */
+  /* section 섹션5 UNIVERSE */
+  /* section 섹션6 UNIVERSE */
+}
 main section {
   position: relative;
   width: 100%;
@@ -197,4 +206,40 @@ main .mainVisual > .mouseScroll > p {
 }
 main .PROMO video {
   width: 100%;
+}
+main .UNIVERSE p {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+main .UNIVERSE .swiper {
+  width: 100%;
+  padding: 3.125rem 0;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+main .UNIVERSE .swiper .swiper-wrapper .swiper-slide {
+  box-sizing: border-box;
+  padding: 0.9375rem 0.9375rem 0 0.9375rem;
+  border-radius: 1rem;
+  background-color: #000;
+}
+main .UNIVERSE .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+main .UNIVERSE .swiper .swiper-wrapper .swiper-slide video {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p {
+  font-size: 1rem;
+  padding: 0.3125rem;
+  margin-bottom: 0;
+}
+main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p span {
+  color: #5cffc0;
+}
+main .UNIVERSE a {
+  margin-top: 3.75rem;
 }/*# sourceMappingURL=main.css.map */
