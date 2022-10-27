@@ -20,4 +20,30 @@
   header .inner nav .menu {
     display: none;
   }
+  main section {
+    margin-bottom: 20vh;
+  }
+  main .mainVisual > h2 {
+    font-size: 1.875rem;
+  }
+  main .mainVisual a {
+    width: 13rem;
+    height: 2.6875rem;
+    font-size: 0.9375rem;
+    transition: 0s;
+  }
+  main .mainVisual > .mouseScroll > p {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+  html body {
+    font-size: 1rem;
+  }
+  html body .inner {
+    width: 100%;
+  }
 }/*# sourceMappingURL=media.css.map */
