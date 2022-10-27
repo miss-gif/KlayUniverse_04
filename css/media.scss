@@ -48,6 +48,48 @@
         padding: 3.125rem 1rem; // 추가코드
       }
     }
+    .ROADMAP {
+      .row {
+        width: 100%;
+
+        article {
+          flex-direction: column;
+
+          .tabMenu {
+            display: flex;
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+
+            li {
+              width: 5rem;
+            }
+
+            .active {
+              &:before {
+                bottom: 0;
+                height: 0.25rem;
+                top: auto;
+                width: 100%;
+                transform: translate(0%, 34%);
+              }
+            }
+          }
+
+          .tabList {
+            border-radius: 1rem;
+            padding: 2rem;
+            li {
+              flex-direction: column;
+            }
+            img {
+              margin-left: 0;
+              margin: 1.25rem 0;
+              width: 9.375rem;
+            }
+          }
+        }
+      }
+    }
   }  
 }
 

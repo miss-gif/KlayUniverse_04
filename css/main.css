@@ -26,6 +26,7 @@ html body .inner {
 }
 html body .row {
   padding: 0 2rem;
+  box-sizing: border-box;
 }
 html body .active {
   color: #5cffc0;
@@ -113,10 +114,11 @@ header .header nav .menu li a:hover {
 
 /* main 메인 */
 main {
+  /* section 공통 */
   /* section 섹션1 mainVisual */
   /* section 섹션2 PROMO */
   /* section 섹션3 UNIVERSE */
-  /* section 섹션4 UNIVERSE */
+  /* section 섹션4 ROADMAP */
   /* section 섹션5 UNIVERSE */
   /* section 섹션6 UNIVERSE */
 }
@@ -242,4 +244,85 @@ main .UNIVERSE .swiper .swiper-wrapper .swiper-slide p span {
 }
 main .UNIVERSE a {
   margin-top: 3.75rem;
+}
+main .ROADMAP::after {
+  content: "";
+  position: absolute;
+  top: -30rem;
+  left: 0px;
+  width: 100%;
+  height: 200%;
+  background-image: url(../img/road/roadmap_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -10;
+}
+main .ROADMAP .row {
+  width: 100%;
+  max-width: 72.5rem;
+}
+main .ROADMAP .row article {
+  background-color: #000;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+main .ROADMAP .row article .tabMenu {
+  min-width: 7.875rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #191919;
+}
+main .ROADMAP .row article .tabMenu li {
+  position: relative;
+  height: 2.4375rem;
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+main .ROADMAP .row article .tabMenu .active:before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 40%;
+  background-color: #5cffc0;
+  top: 48%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 0.3125rem;
+}
+main .ROADMAP .row article .tabList {
+  width: 100%;
+  min-height: 32.5rem;
+  padding: 3rem;
+  background-color: #101010;
+  border-radius: 0 1rem 1rem 0;
+  box-sizing: border-box;
+}
+main .ROADMAP .row article .tabList li {
+  display: flex;
+  justify-content: space-between;
+}
+main .ROADMAP .row article .tabList li ul li {
+  display: block;
+  line-height: 2;
+}
+main .ROADMAP .row article .tabList li ul li::before {
+  content: "· ";
+}
+main .ROADMAP .row article .tabList li ul li:hover {
+  color: #5cffc0;
+}
+main .ROADMAP .row article .tabList img {
+  margin-left: 6.25rem;
+  display: block;
+  width: 12.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .ROADMAP .row article .tabList video {
+  display: block;
+  width: 45%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */

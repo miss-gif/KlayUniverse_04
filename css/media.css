@@ -32,6 +32,39 @@
   main .UNIVERSE .swiper {
     padding: 3.125rem 1rem;
   }
+  main .ROADMAP .row {
+    width: 100%;
+  }
+  main .ROADMAP .row article {
+    flex-direction: column;
+  }
+  main .ROADMAP .row article .tabMenu {
+    display: flex;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  main .ROADMAP .row article .tabMenu li {
+    width: 5rem;
+  }
+  main .ROADMAP .row article .tabMenu .active:before {
+    bottom: 0;
+    height: 0.25rem;
+    top: auto;
+    width: 100%;
+    transform: translate(0%, 34%);
+  }
+  main .ROADMAP .row article .tabList {
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  main .ROADMAP .row article .tabList li {
+    flex-direction: column;
+  }
+  main .ROADMAP .row article .tabList img {
+    margin-left: 0;
+    margin: 1.25rem 0;
+    width: 9.375rem;
+  }
 }
 @media (max-width: 320px) {
   html {
