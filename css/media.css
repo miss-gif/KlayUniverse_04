@@ -1,0 +1,23 @@
+@media (max-width: 940px) {
+  html {
+    font-size: 14px;
+  }
+  html body {
+    font-size: 1rem;
+  }
+  html body .inner {
+    width: 100%;
+  }
+  header .inner {
+    display: flex;
+    justify-content: center;
+  }
+  header .inner nav .languageBtn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  header .inner nav .menu {
+    display: none;
+  }
+}/*# sourceMappingURL=media.css.map */

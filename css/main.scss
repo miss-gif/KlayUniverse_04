@@ -1,0 +1,132 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+  body {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #101010;
+    color: #fff;
+
+    main {
+      background-image: url(../img/grid_background.png);
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        cursor: url(../img/mouse.png), auto;
+      }
+    }
+
+    .inner {
+      width: 1360px;
+      margin: 0 auto;
+    }
+
+    .row {
+      padding: 0 2rem;
+    }
+
+    .active {
+      color: #5cffc0;
+    }
+
+    .hide {
+      display: none;
+      z-index: -99;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .btnStyle {
+      width: 17.5rem;
+      height: 3.75rem;
+      font-size: 1.25rem;
+      border-radius: 1.875rem;
+      background-color: transparent;
+      border: 1px solid #fff;
+      transition: 0.3s;
+      text-align: center;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btnStyle:hover {
+      background: linear-gradient(to right, #31f8ab, #39c2ee);
+      border: transparent;
+      color: #101010;
+    }
+  }
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header 시작 */
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 4.375rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  @include flexCenter;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    nav {
+      width: 100%;
+
+      .languageBtn {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0.625rem;
+
+        li {
+          position: relative;
+          &:nth-child(1)::after {
+            position: absolute;
+            content: "";
+            top: 55%;
+            right: -0.5rem;
+            transform:translate(0,-50%);
+            background-color: #fff;
+            width: 1px;
+            height: 70%;
+          }
+          button {
+            margin-left: 1rem;            
+          }
+        }
+      }
+
+      .menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li {
+          a {
+            &:hover {
+              color: #5cffc0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* header 종료 */
