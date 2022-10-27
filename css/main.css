@@ -119,7 +119,7 @@ main {
   /* section 섹션2 PROMO */
   /* section 섹션3 UNIVERSE */
   /* section 섹션4 ROADMAP */
-  /* section 섹션5 UNIVERSE */
+  /* section 섹션5 TEAM */
   /* section 섹션6 UNIVERSE */
 }
 main section {
@@ -325,4 +325,38 @@ main .ROADMAP .row article .tabList video {
   width: 45%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+main .TEAM > p {
+  font-size: 1.25rem;
+  line-height: 2;
+  text-align: center;
+}
+main .TEAM .swiper {
+  width: 100%;
+  padding: 3.125rem 0;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+main .TEAM .swiper .swiper-wrapper .swiper-slide {
+  box-sizing: border-box;
+  background-color: #000;
+  border-radius: 0.8125rem;
+  padding: 0.625rem;
+}
+main .TEAM .swiper .swiper-wrapper .swiper-slide .img_area img {
+  width: 100%;
+}
+main .TEAM .swiper .swiper-wrapper .swiper-slide .title_area {
+  text-align: center;
+  white-space: nowrap;
+}
+main .TEAM .swiper .swiper-wrapper .swiper-slide .title_area .name {
+  padding: 0.625rem;
+  font-size: 1.625rem;
+  line-height: 1.625rem;
+}
+main .TEAM .swiper .swiper-wrapper .swiper-slide .title_area .job {
+  padding: 0.625rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }/*# sourceMappingURL=main.css.map */

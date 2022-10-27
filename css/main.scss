@@ -384,6 +384,53 @@ main {
   }
 
 
-   /* section 섹션5 UNIVERSE */
+   /* section 섹션5 TEAM */
+   .TEAM {
+    >p {
+      font-size: 1.25rem;
+      line-height: 2;
+      text-align: center;
+    }
+
+    .swiper {
+      width: 100%;
+      padding: 3.125rem 0;
+      padding-left: 1rem; // 추가코드
+      box-sizing: border-box;
+
+      .swiper-wrapper {
+        .swiper-slide {
+          box-sizing: border-box;
+          background-color: #000;
+          border-radius: 0.8125rem;
+          padding: 0.625rem;
+
+          .img_area {
+            img {
+              width: 100%;
+            }
+          }
+
+          .title_area {
+            text-align: center;
+            white-space: nowrap;
+
+            .name {
+              padding: 0.625rem;
+              font-size: 1.625rem;
+              line-height: 1.625rem;
+            }
+
+            .job {
+              padding: 0.625rem;
+              font-size: 1rem;
+              line-height: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
    /* section 섹션6 UNIVERSE */
 }

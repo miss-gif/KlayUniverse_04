@@ -34,20 +34,23 @@
     section {
       margin-bottom: 20vh;
     }
+
     .mainVisual {
-      > h2 {
+      >h2 {
         font-size: 1.875rem;
       }
 
-      > p {
+      >p {
         font-size: 0.75rem;
       }
     }
+
     .UNIVERSE {
       .swiper {
         padding: 3.125rem 1rem; // 추가코드
       }
     }
+
     .ROADMAP {
       .row {
         width: 100%;
@@ -78,9 +81,11 @@
           .tabList {
             border-radius: 1rem;
             padding: 2rem;
+
             li {
               flex-direction: column;
             }
+
             img {
               margin-left: 0;
               margin: 1.25rem 0;
@@ -90,7 +95,15 @@
         }
       }
     }
-  }  
+
+    .TEAM {
+      .swiper {
+        padding: 3.125rem 1rem;
+      }
+    }
+
+    
+  }
 }
 
 @media (max-width: 320px) {
