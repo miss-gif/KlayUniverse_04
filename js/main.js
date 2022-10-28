@@ -120,6 +120,7 @@ const languageBtn = document.querySelectorAll(".languageBtn>li>button");
 languageBtn[0].addEventListener("click", function () {
   languageBtn[0].classList.add("active");
   languageBtn[1].classList.remove("active");
+  document.querySelector(".s01").innerHTML = lang.en.s01.desc;
   document.querySelector(".s03").innerText = lang.en.s03.desc;
   document.querySelector(".q2_01").innerText = lang.en.s04.q2_01;
   document.querySelector(".q2_02").innerText = lang.en.s04.q2_02;
@@ -144,11 +145,13 @@ languageBtn[0].addEventListener("click", function () {
   document.querySelector(".q3_13").innerText = lang.en.s04.q3_13;
   document.querySelector(".s05").innerText = lang.en.s05.desc;
   document.querySelector(".s06").innerText = lang.en.s06.desc;
+  document.querySelector(".s07").innerHTML = lang.en.s07.desc;
 });
 
 languageBtn[1].addEventListener("click", function () {
   languageBtn[0].classList.remove("active");
   languageBtn[1].classList.add("active");
+  document.querySelector(".s01").innerHTML = lang.kr.s01.desc;
   document.querySelector(".s03").innerText = lang.kr.s03.desc;
   document.querySelector(".q2_01").innerText = lang.kr.s04.q2_01;
   document.querySelector(".q2_02").innerText = lang.kr.s04.q2_02;
@@ -173,4 +176,5 @@ languageBtn[1].addEventListener("click", function () {
   document.querySelector(".q3_13").innerText = lang.kr.s04.q3_13;
   document.querySelector(".s05").innerText = lang.kr.s05.desc;
   document.querySelector(".s06").innerText = lang.kr.s06.desc;
+  document.querySelector(".s07").innerHTML = lang.kr.s07.desc;
 });

@@ -1,5 +1,8 @@
 const lang = {
   en: {
+    s01: {
+      desc: "5,000 Metaverse Worlds, <br /> <strong>On Klaytn Blockchain.</strong>",
+    },
     s03: {
       desc: "Each KLAY UNIVERSE NFT is an explorable,\nlimitless world that can be built into anything you can imagine.",
     },
@@ -32,8 +35,14 @@ const lang = {
     s06: {
       desc: "Klay Universe is with creative and outstanding partners to expand its broader worldview.",
     },
+    s07: {
+      desc: "Create universe & Enjoy omniverse <br /> User Centered & Participatory",
+    },
   },
   kr: {
+    s01: {
+      desc: "5,000개의 메타버스 월드, <br /> <strong>클레이튼 블록체인에서.</strong>",
+    },
     s03: {
       desc: "각 각의  KLAY UNIVERSE NFT는 탐색이 가능하며, \n 당신이 상상할 수 있는 모든 것을 만들 수 있는 제한이 없는 세계입니다.",
     },
@@ -65,6 +74,9 @@ const lang = {
     },
     s06: {
       desc: "Klay Universe는 더 넓은 세계관 확장을 위해 창의적이고 뛰어난 파트너와 함께합니다.",
+    },
+    s07: {
+      desc: "우주를 창조하고 전 세계를 즐기세요. <br /> 사용자 중심 및 참여형",
     },
   },
 };
