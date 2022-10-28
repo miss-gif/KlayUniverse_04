@@ -3,7 +3,7 @@ const swiper1 = new Swiper(".UNIVERSE .swiper", {
   direction: "horizontal", // 수평 슬라이드
   autoplay: {
     // 자동 재생 여부
-    delay: 3500, // 3.5초마다 슬라이드 교체
+    delay: 2500, // 3.5초마다 슬라이드 교체
   },
   loop: true, // 반복 재생 여부
   spaceBetween: 20, // 슬라이드 사이 여백
@@ -25,7 +25,7 @@ const swiper2 = new Swiper(".TEAM .swiper", {
   direction: "horizontal", // 수평 슬라이드
   autoplay: {
     // 자동 재생 여부
-    delay: 3500, // 3.5초마다 슬라이드 교체
+    delay: 2500, // 3.5초마다 슬라이드 교체
   },
   loop: true, // 반복 재생 여부
   spaceBetween: 20, // 슬라이드 사이 여백
@@ -53,7 +53,7 @@ const swiper3 = new Swiper(".GALLERY .swiper", {
   direction: "horizontal", // 수평 슬라이드
   autoplay: {
     // 자동 재생 여부
-    delay: 3500, // 3.5초마다 슬라이드 교체
+    delay: 2500, // 3.5초마다 슬라이드 교체
   },
   loop: true, // 반복 재생 여부
   spaceBetween: 20, // 슬라이드 사이 여백

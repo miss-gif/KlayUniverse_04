@@ -446,6 +446,10 @@ main .TEAM .swiper .swiper-wrapper .swiper-slide .title_area .job {
   font-size: 1rem;
   line-height: 1rem;
 }
+main .PARTNERS .inner {
+  max-width: 1360px;
+  width: 100%;
+}
 main .PARTNERS .inner p {
   text-align: center;
   font-size: 1.25rem;
