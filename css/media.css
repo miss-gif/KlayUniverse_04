@@ -20,6 +20,13 @@
   header .inner nav .menu {
     display: none;
   }
+  aside {
+    top: 12%;
+    right: 3%;
+  }
+  aside ul li {
+    margin-bottom: 1rem;
+  }
   main section {
     margin-bottom: 20vh;
   }

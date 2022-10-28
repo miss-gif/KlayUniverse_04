@@ -112,6 +112,144 @@ header .header nav .menu li a:hover {
   color: #5cffc0;
 }
 
+/* aside 사이드 */
+aside {
+  position: fixed;
+  top: 15%;
+  right: 8%;
+  z-index: 99;
+}
+aside ul li {
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-bottom: 0.8rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside ul li:hover {
+  background: linear-gradient(to right, #31f8ab, #39c2ee);
+  border: transparent;
+}
+aside ul li:nth-child(1) a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/aside/icon01.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+aside ul li:nth-child(1) a:hover {
+  background-image: url(../img/aside/icon01_hover.png);
+}
+aside ul li:nth-child(1) a:hover::after {
+  content: "ConnectWallet";
+  position: absolute;
+  top: 50%;
+  right: 70px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #212121;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+aside ul li:nth-child(1) a:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border: 0.7rem solid transparent;
+  border-left: 1rem solid #fff;
+}
+aside ul li:nth-child(2) a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/aside/icon02.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+aside ul li:nth-child(2) a:hover {
+  background-image: url(../img/aside/icon02_hover.png);
+}
+aside ul li:nth-child(2) a:hover::after {
+  content: "Connect Whitepaper";
+  position: absolute;
+  top: 50%;
+  right: 70px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #212121;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+aside ul li:nth-child(2) a:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border: 0.7rem solid transparent;
+  border-left: 1rem solid #fff;
+}
+aside ul li:nth-child(3) a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/aside/icon03.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+aside ul li:nth-child(3) a:hover {
+  background-image: url(../img/aside/icon03_hover.png);
+}
+aside ul li:nth-child(3) a:hover::after {
+  content: "UNIVERSE Search";
+  position: absolute;
+  top: 50%;
+  right: 70px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #212121;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+aside ul li:nth-child(3) a:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border: 0.7rem solid transparent;
+  border-left: 1rem solid #fff;
+}
+
 /* main 메인 */
 main {
   /* section 공통 */
@@ -360,9 +498,6 @@ main .TEAM .swiper .swiper-wrapper .swiper-slide .title_area .job {
   padding: 0.625rem;
   font-size: 1rem;
   line-height: 1rem;
-}
-main .PARTNERS .inner {
-  width: 100%;
 }
 main .PARTNERS .inner p {
   text-align: center;
