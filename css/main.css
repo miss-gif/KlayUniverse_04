@@ -508,6 +508,10 @@ main .GALLERY .swiper .swiper-wrapper .swiper-slide {
 }
 main .GALLERY .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
+  cursor: pointer;
+}
+main .GALLERY .swiper .swiper-wrapper .swiper-slide img:hover {
+  opacity: 0.3;
 }
 main .GALLERY .swiper .swiper-pagination {
   display: none;
