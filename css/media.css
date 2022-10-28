@@ -77,6 +77,44 @@
   main .GALLERY .swiper .swiper-pagination {
     display: block;
   }
+  footer .footerInfo .row div {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .footerInfo .row div .leftBox {
+    width: 100%;
+  }
+  footer .footerInfo .row div .leftBox form {
+    width: 100%;
+  }
+  footer .footerInfo .row div .leftBox form input[type=email] {
+    width: 100%;
+  }
+  footer .footerInfo .row div .rightBox {
+    width: 100%;
+    margin-top: 2rem;
+    align-items: flex-start;
+  }
+  footer .footerInfo .row div .rightBox a {
+    font-size: 1rem;
+  }
+  footer .footerInfo .row div .rightBox ul {
+    margin-top: 3.125rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footerInfo .row div .rightBox ul li {
+    padding: 0 1.25rem;
+  }
+  footer .footerInfo .row div .rightBox ul li a {
+    margin-left: 0;
+  }
+  footer .footerInfo .row div .rightBox ul li a img {
+    width: 1.875rem;
+  }
 }
 @media (max-width: 320px) {
   html {
@@ -94,10 +132,13 @@
   html body h2 {
     font-size: 2.3rem;
   }
-  html main .PARTNERS .inner ul li {
+  main .PARTNERS .inner ul li {
     width: 33.3333%;
   }
-  html main .PARTNERS .inner ul li div {
-    min-height: 5rem;
+  main .PARTNERS .inner ul li div {
+    max-height: 0rem;
+  }
+  footer .footerInfo .row div .rightBox ul li {
+    padding: 0 3px;
   }
 }/*# sourceMappingURL=media.css.map */

@@ -114,9 +114,64 @@
 
     .GALLERY {
       .swiper {
-        padding: 3.125rem 1rem;     
+        padding: 3.125rem 1rem;
+
         .swiper-pagination {
           display: block;
+        }
+      }
+    }
+  }
+
+  footer {
+    .footerInfo {
+      .row {
+        div {
+          width: 100%;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .leftBox {
+            width: 100%;
+
+            form {
+              width: 100%;
+
+              input[type="email"] {
+                width: 100%;
+              }
+            }
+          }
+
+          .rightBox {
+            width: 100%;
+            margin-top: 2rem;
+            align-items: flex-start;
+
+            a {
+              font-size: 1rem;
+            }
+
+            ul {
+              margin-top: 3.125rem;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              li {
+                padding: 0 1.25rem;
+
+                a {
+                  margin-left: 0;
+
+                  img {
+                    width: 1.875rem;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -142,19 +197,24 @@
         font-size: 2.3rem;
       }
     }
-    main {
-      .PARTNERS {
-        .inner {
-          ul {
-            li {
-              width: 33.3333%;
-              div {
-                min-height: 5rem;
-              }
+  }
+
+  main {
+    .PARTNERS {
+      .inner {
+        ul {
+          li {
+            width: 33.3333%;
+
+            div {
+              max-height:0rem;
             }
           }
         }
       }
     }
+  }
+  footer .footerInfo .row div .rightBox ul li {
+    padding: 0 3px;
   }
 }
