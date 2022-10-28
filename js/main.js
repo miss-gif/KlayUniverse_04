@@ -91,3 +91,25 @@ tabMenu[2].addEventListener("click", function (e) {
   tabList[1].classList.add("hide");
   tabList[2].classList.remove("hide");
 });
+
+/* aside 버튼을 클릭하면 모달창이 열림 */
+
+const asideBtn = document.querySelectorAll("aside>ul>li>a");
+const modalNotPage = document.querySelector(".modalNotPage");
+
+asideBtn[0].addEventListener("click", function (e) {
+  e.preventDefault();
+  modalNotPage.classList.remove("hide");
+});
+
+asideBtn[2].addEventListener("click", function (e) {
+  e.preventDefault();
+  modalNotPage.classList.remove("hide");
+});
+
+/* 모달창 닫기 */
+
+const modalClose = document.querySelector(".modalClose");
+modalClose.addEventListener("click", function () {
+  modalNotPage.classList.add("hide");
+});

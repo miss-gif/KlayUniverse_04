@@ -84,6 +84,10 @@
   main .GALLERY .swiper .swiper-pagination {
     display: block;
   }
+  main .modalNotPage {
+    width: 90%;
+    height: 90%;
+  }
   footer .footerInfo .row div {
     width: 100%;
     flex-direction: column;
