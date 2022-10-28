@@ -74,6 +74,9 @@
   main .GALLERY .swiper {
     padding: 3.125rem 1rem;
   }
+  main .GALLERY .swiper .swiper-pagination {
+    display: block;
+  }
 }
 @media (max-width: 320px) {
   html {

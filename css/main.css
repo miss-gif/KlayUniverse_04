@@ -403,6 +403,12 @@ main .GALLERY .swiper .swiper-wrapper .swiper-slide {
 main .GALLERY .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
+main .GALLERY .swiper .swiper-pagination {
+  display: none;
+}
+main .GALLERY .swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+}
 main .GALLERY a {
   margin-top: 1.875rem;
 }/*# sourceMappingURL=main.css.map */

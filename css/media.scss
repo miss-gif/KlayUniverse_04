@@ -114,7 +114,10 @@
 
     .GALLERY {
       .swiper {
-        padding: 3.125rem 1rem;        
+        padding: 3.125rem 1rem;     
+        .swiper-pagination {
+          display: block;
+        }
       }
     }
   }
