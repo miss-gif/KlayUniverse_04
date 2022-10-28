@@ -14,6 +14,7 @@ html body main {
   background-image: url(../img/grid_background.png);
 }
 html body a {
+  transition: all 0.25s ease;
   color: #fff;
 }
 html body a:hover {
@@ -45,7 +46,6 @@ html body .btnStyle {
   border-radius: 1.875rem;
   background-color: transparent;
   border: 1px solid #fff;
-  transition: 0.3s;
   text-align: center;
   box-sizing: border-box;
   display: flex;
@@ -118,6 +118,7 @@ header .header nav .languageBtn li:nth-child(1)::after {
 header .header nav .languageBtn li button {
   cursor: pointer;
   margin-left: 1rem;
+  transition: all 0.25s ease;
 }
 header .header nav .languageBtn li button:hover {
   cursor: url(../img/mouse.png), auto;
@@ -149,6 +150,7 @@ aside ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.25s ease;
 }
 aside ul li:hover {
   background: linear-gradient(to right, #31f8ab, #39c2ee);
@@ -411,6 +413,7 @@ main .ROADMAP .row article .tabList li {
 main .ROADMAP .row article .tabList li ul li {
   display: block;
   line-height: 2;
+  transition: all 0.25s ease;
 }
 main .ROADMAP .row article .tabList li ul li::before {
   content: "· ";
@@ -508,10 +511,7 @@ main .GALLERY .swiper .swiper-wrapper .swiper-slide {
 }
 main .GALLERY .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
-  cursor: pointer;
-}
-main .GALLERY .swiper .swiper-wrapper .swiper-slide img:hover {
-  opacity: 0.3;
+  transition: all 0.25s ease;
 }
 main .GALLERY .swiper .swiper-pagination {
   display: none;
