@@ -135,7 +135,6 @@ header {
           }
 
           button {
-            cursor: pointer;
             margin-left: 1rem;
             transition: all 0.25s ease;
 
@@ -619,6 +618,11 @@ main {
           padding: 0.625rem;
           border-radius: 0.625rem;
           background-color: #000;
+          &:hover {
+            border: 1px solid #5cffc0;
+            opacity: 0.6;
+            cursor: url(../img/mouse.png), auto;
+          }
 
           img {
             width: 100%;
@@ -666,7 +670,7 @@ main {
       top: 0;
       right: 0;
       color: #fff;
-      cursor: pointer;
+      cursor: url(../img/mouse.png), auto;
       font-size: 2rem;
       padding: 0.5rem 0.8rem;
       background-color: transparent;

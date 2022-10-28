@@ -116,7 +116,6 @@ header .header nav .languageBtn li:nth-child(1)::after {
   height: 70%;
 }
 header .header nav .languageBtn li button {
-  cursor: pointer;
   margin-left: 1rem;
   transition: all 0.25s ease;
 }
@@ -509,6 +508,11 @@ main .GALLERY .swiper .swiper-wrapper .swiper-slide {
   border-radius: 0.625rem;
   background-color: #000;
 }
+main .GALLERY .swiper .swiper-wrapper .swiper-slide:hover {
+  border: 1px solid #5cffc0;
+  opacity: 0.6;
+  cursor: url(../img/mouse.png), auto;
+}
 main .GALLERY .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   transition: all 0.25s ease;
@@ -547,7 +551,7 @@ main .modalNotPage button {
   top: 0;
   right: 0;
   color: #fff;
-  cursor: pointer;
+  cursor: url(../img/mouse.png), auto;
   font-size: 2rem;
   padding: 0.5rem 0.8rem;
   background-color: transparent;
