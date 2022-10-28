@@ -1,6 +1,6 @@
-console.log("연결확인");
+console.log("main 연결");
 
-/* 네비게이션 메뉴 버튼 제어 */
+/* nav 네비 메뉴 버튼 제어 */
 const navMenu = document.querySelectorAll("nav>ul>li>a");
 
 navMenu[0].addEventListener("click", function () {
@@ -57,7 +57,7 @@ navMenu[5].addEventListener("click", function () {
   navMenu[5].classList.add("active");
 });
 
-/* 탭메뉴 버튼 제어 */
+/* section 섹션4 ROADMAP 탭메뉴 버튼 제어 */
 
 const tabMenu = document.querySelectorAll("article>ul>li>a");
 const tabList = document.querySelectorAll(".tabList");
