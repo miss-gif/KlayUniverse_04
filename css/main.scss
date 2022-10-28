@@ -618,15 +618,23 @@ main {
           padding: 0.625rem;
           border-radius: 0.625rem;
           background-color: #000;
+          transition: all 0.25s ease;
+          overflow: hidden;
+
           &:hover {
-            border: 1px solid #5cffc0;
-            opacity: 0.6;
+            border: 2px solid #5cffc0;
             cursor: url(../img/mouse.png), auto;
+            transform: scale(1.05);
+            z-index: 1;
           }
 
           img {
             width: 100%;
             transition: all 0.25s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
           }
         }
       }
