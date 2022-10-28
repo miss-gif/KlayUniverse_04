@@ -71,6 +71,9 @@
   main .PARTNERS .inner ul li {
     width: 25%;
   }
+  main .GALLERY .swiper {
+    padding: 3.125rem 1rem;
+  }
 }
 @media (max-width: 320px) {
   html {

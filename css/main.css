@@ -121,7 +121,7 @@ main {
   /* section 섹션4 ROADMAP */
   /* section 섹션5 TEAM */
   /* section 섹션6 PARTNERS */
-  /* section 섹션6 UNIVERSE */
+  /* section 섹션7 GALLERY */
 }
 main section {
   position: relative;
@@ -382,4 +382,27 @@ main .PARTNERS .inner ul li div {
   min-height: 7rem;
   border-radius: 1rem;
   background-color: #191919;
+}
+main .GALLERY p {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+main .GALLERY .swiper {
+  width: 100%;
+  padding: 3.125rem 0;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+main .GALLERY .swiper .swiper-wrapper .swiper-slide {
+  box-sizing: border-box;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  background-color: #000;
+}
+main .GALLERY .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+main .GALLERY a {
+  margin-top: 1.875rem;
 }/*# sourceMappingURL=main.css.map */
