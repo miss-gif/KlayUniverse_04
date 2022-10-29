@@ -23,35 +23,20 @@ for (let i = 0; i < navMenu.length; i++) {
 const tabMenu = document.querySelectorAll("article>ul>li>a");
 const tabList = document.querySelectorAll(".tabList");
 
-tabMenu[0].addEventListener("click", function (e) {
-  e.preventDefault();
-  tabMenu[0].classList.add("active");
-  tabMenu[1].classList.remove("active");
-  tabMenu[2].classList.remove("active");
-  tabList[0].classList.remove("hide");
-  tabList[1].classList.add("hide");
-  tabList[2].classList.add("hide");
-});
+for (let i = 0; i < tabMenu.length; i++) {
+  tabMenu[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    for (let j = 0; j < tabMenu.length; j++) {
+      tabMenu[j].classList.remove("active");
+    }
+    tabMenu[i].classList.add("active");
 
-tabMenu[1].addEventListener("click", function (e) {
-  e.preventDefault();
-  tabMenu[0].classList.remove("active");
-  tabMenu[1].classList.add("active");
-  tabMenu[2].classList.remove("active");
-  tabList[0].classList.add("hide");
-  tabList[1].classList.remove("hide");
-  tabList[2].classList.add("hide");
-});
-
-tabMenu[2].addEventListener("click", function (e) {
-  e.preventDefault();
-  tabMenu[0].classList.remove("active");
-  tabMenu[1].classList.remove("active");
-  tabMenu[2].classList.add("active");
-  tabList[0].classList.add("hide");
-  tabList[1].classList.add("hide");
-  tabList[2].classList.remove("hide");
-});
+    for (let k = 0; k < tabList.length; k++) {
+      tabList[k].classList.add("hide");
+    }
+    tabList[i].classList.remove("hide");
+  });
+}
 
 /* aside 버튼을 클릭하면 모달창이 열림 */
 
