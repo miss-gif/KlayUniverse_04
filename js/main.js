@@ -70,6 +70,15 @@ modalClose.addEventListener("click", function () {
 /* 언어 변경 버튼*/
 const languageBtn = document.querySelectorAll(".languageBtn>li>button");
 
+// for (let i = 0; i < languageBtn.length; i++) {
+//   languageBtn[i].addEventListener("click", function () {
+//     for (let j = 0; j < languageBtn.length; j++) {
+//       languageBtn[j].classList.remove("active");
+//     }
+//     languageBtn[i].classList.add("active");
+//   });
+// }
+
 languageBtn[0].addEventListener("click", function () {
   languageBtn[0].classList.add("active");
   languageBtn[1].classList.remove("active");
