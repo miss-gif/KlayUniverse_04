@@ -194,6 +194,7 @@ aside {
       box-sizing: border-box;
       @include flexCenter;
       transition: all 0.25s ease;
+      cursor: url(../img/mouse.png), auto;
 
       &:hover {
         background: linear-gradient(to right, #31f8ab, #39c2ee);
