@@ -134,3 +134,17 @@ for (let i = 0; i < languageBtn.length; i++) {
     }
   });
 }
+
+/* 버튼 비활성화 */
+
+const btnStyle = document.querySelectorAll(".btnStyle");
+
+btnStyle[1].addEventListener("click", function (e) {
+  e.preventDefault();
+  modalNotPage.classList.remove("hide");
+});
+
+btnStyle[2].addEventListener("click", function (e) {
+  e.preventDefault();
+  modalNotPage.classList.remove("hide");
+});
