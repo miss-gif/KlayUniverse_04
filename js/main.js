@@ -1,61 +1,22 @@
 console.log("main 연결");
 
-/* nav 네비 메뉴 버튼 제어 */
-const navMenu = document.querySelectorAll("nav>ul>li>a");
+/* nav 메뉴 버튼 제어 */
+// nav의 li(a)를 클릭 했을 때, 해당 li(a)에 active클래스 추가
 
-navMenu[0].addEventListener("click", function () {
-  navMenu[0].classList.add("active");
-  navMenu[1].classList.remove("active");
-  navMenu[2].classList.remove("active");
-  navMenu[3].classList.remove("active");
-  navMenu[4].classList.remove("active");
-  navMenu[5].classList.remove("active");
-});
+const navMenu = document.querySelectorAll("nav>.menu>li>a");
+// nav의 모든 li(a)
 
-navMenu[1].addEventListener("click", function () {
-  navMenu[0].classList.remove("active");
-  navMenu[1].classList.add("active");
-  navMenu[2].classList.remove("active");
-  navMenu[3].classList.remove("active");
-  navMenu[4].classList.remove("active");
-  navMenu[5].classList.remove("active");
-});
-
-navMenu[2].addEventListener("click", function () {
-  navMenu[0].classList.remove("active");
-  navMenu[1].classList.remove("active");
-  navMenu[2].classList.add("active");
-  navMenu[3].classList.remove("active");
-  navMenu[4].classList.remove("active");
-  navMenu[5].classList.remove("active");
-});
-
-navMenu[3].addEventListener("click", function () {
-  navMenu[0].classList.remove("active");
-  navMenu[1].classList.remove("active");
-  navMenu[2].classList.remove("active");
-  navMenu[3].classList.add("active");
-  navMenu[4].classList.remove("active");
-  navMenu[5].classList.remove("active");
-});
-
-navMenu[4].addEventListener("click", function () {
-  navMenu[0].classList.remove("active");
-  navMenu[1].classList.remove("active");
-  navMenu[2].classList.remove("active");
-  navMenu[3].classList.remove("active");
-  navMenu[4].classList.add("active");
-  navMenu[5].classList.remove("active");
-});
-
-navMenu[5].addEventListener("click", function () {
-  navMenu[0].classList.remove("active");
-  navMenu[1].classList.remove("active");
-  navMenu[2].classList.remove("active");
-  navMenu[3].classList.remove("active");
-  navMenu[4].classList.remove("active");
-  navMenu[5].classList.add("active");
-});
+for (let i = 0; i < navMenu.length; i++) {
+  navMenu[i].addEventListener("click", function () {
+    // nav의 li(a)를 클릭 했을 때,
+    for (let j = 0; j < navMenu.length; j++) {
+      navMenu[j].classList.remove("active");
+      // nav의 li(a)의 모든 active클래스를 삭제
+    }
+    navMenu[i].classList.add("active");
+    // 현재 index에 active 클래스를 추가
+  });
+}
 
 /* section 섹션4 ROADMAP 탭메뉴 버튼 제어 */
 
