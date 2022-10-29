@@ -43,15 +43,22 @@ for (let i = 0; i < tabMenu.length; i++) {
 const asideBtn = document.querySelectorAll("aside>ul>li>a");
 const modalNotPage = document.querySelector(".modalNotPage");
 
-asideBtn[0].addEventListener("click", function (e) {
-  e.preventDefault();
-  modalNotPage.classList.remove("hide");
-});
+// asideBtn[0].addEventListener("click", function (e) {
+//   e.preventDefault();
+//   modalNotPage.classList.remove("hide");
+// });
 
-asideBtn[2].addEventListener("click", function (e) {
-  e.preventDefault();
-  modalNotPage.classList.remove("hide");
-});
+// asideBtn[2].addEventListener("click", function (e) {
+//   e.preventDefault();
+//   modalNotPage.classList.remove("hide");
+// });
+
+for (let i = 0; i < asideBtn.length; i++) {
+  asideBtn[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    modalNotPage.classList.remove("hide");
+  });
+}
 
 /* 모달창 닫기 */
 
