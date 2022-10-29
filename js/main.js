@@ -147,4 +147,21 @@ btnStyle[1].addEventListener("click", function (e) {
 btnStyle[2].addEventListener("click", function (e) {
   e.preventDefault();
   modalNotPage.classList.remove("hide");
+  // console.log(e.target);
 });
+
+/* GALLERY 라이트박스 */
+const lightboxImg = document.querySelectorAll(".GALLERY>.swiper>ul>li>img");
+
+for (let i = 0; i < lightboxImg.length; i++) {
+  lightboxImg[i].addEventListener("click", function (e) {
+    // alert(lightboxImg[i]);
+    modalNotPage.classList.remove("hide");
+    // console.log(e.target);
+  });
+}
+
+// asideBtn[0].addEventListener("click", function (e) {
+//   e.preventDefault();
+//   modalNotPage.classList.remove("hide");
+// });
