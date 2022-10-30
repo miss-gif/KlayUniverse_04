@@ -553,6 +553,9 @@ main .GALLERY .zoomInArea {
   background-color: #000;
   z-index: 91;
 }
+main .GALLERY .zoomInArea:hover {
+  cursor: url(../img/mouse.png), auto;
+}
 main .GALLERY .zoomInArea img {
   position: absolute;
   top: 50%;

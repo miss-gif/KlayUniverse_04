@@ -148,8 +148,6 @@ document.addEventListener("click", lightbox);
 
 // 이벤트(lightbox) 내용
 function lightbox(e) {
-  // 이벤트 실행 정지
-  e.preventDefault();
   // 클릭한 대상을 찾아서 elem에 담기
   const elem = e.target;
   // 클릭한 대상(elem)의 class값을 elemClass에 담기(getAttribute)
@@ -159,6 +157,8 @@ function lightbox(e) {
   // 줌 영역 안의 이미지(lightboxImage)
   const zoomInImg = document.querySelector(".zoomInImg");
 
+  console.log(elem);
+
   // 클릭한 대상(elem)이 속성(data-lightboximg)를 가지고 있는지 확인(hasAttribute)
   if (elem.hasAttribute("data-lightboximg")) {
     // 속성(data-lightboximg)을 가지고 있으면
@@ -167,7 +167,6 @@ function lightbox(e) {
     zoomInArea.classList.remove("hide");
     // 클릭한 대상(elem)의 속성(data-lightboximg) 값을 newImage에 담기(getAttribute)
     const newImage = elem.getAttribute("data-lightboximg");
-    console.log(newImage);
     // lightboxImage(줌 영역 안의 이미지)의 속성(src)에 newImage값을 담기(setAttribute)
     zoomInImg.setAttribute("src", newImage);
   }
