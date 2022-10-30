@@ -147,7 +147,7 @@ aside {
   position: fixed;
   top: 13%;
   right: 2%;
-  z-index: 99;
+  z-index: 91;
 }
 aside ul li {
   width: 3rem;
@@ -543,6 +543,23 @@ main .GALLERY .swiper .swiper-pagination .swiper-pagination-bullet {
 }
 main .GALLERY a {
   margin-top: 1.875rem;
+}
+main .GALLERY .zoomInArea {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 91;
+}
+main .GALLERY .zoomInArea img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #fff;
+  border-radius: 0.9375rem;
 }
 main .modalNotPage {
   position: fixed;

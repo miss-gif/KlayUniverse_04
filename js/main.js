@@ -142,18 +142,41 @@ for (let i = 0; i < btnStyle.length; i++) {
 }
 
 /* GALLERY 라이트박스 */
-const lightboxImg = document.querySelectorAll(".GALLERY>.swiper>ul>li>img");
 
-for (let i = 0; i < lightboxImg.length; i++) {
-  lightboxImg[i].addEventListener("click", function (e) {
-    // alert(lightboxImg[i]);
-    modalNotPage.classList.remove("hide");
-    modalNotPage.innerText = "blue";
-    // console.log(e.target);
-  });
+// 클릭 이벤트(lightbox) 설정
+document.addEventListener("click", lightbox);
+
+// 이벤트(lightbox) 내용
+function lightbox(e) {
+  // 이벤트 실행 정지
+  e.preventDefault();
+  // 클릭한 대상을 찾아서 elem에 담기
+  const elem = e.target;
+  // 클릭한 대상(elem)의 class값을 elemClass에 담기(getAttribute)
+  const elemClass = elem.getAttribute("class");
+  // 줌 영역(lightboxOverlay)
+  const zoomInArea = document.querySelector(".zoomInArea");
+  // 줌 영역 안의 이미지(lightboxImage)
+  const zoomInImg = document.querySelector(".zoomInImg");
+
+  // 클릭한 대상(elem)이 속성(data-lightboximg)를 가지고 있는지 확인(hasAttribute)
+  if (elem.hasAttribute("data-lightboximg")) {
+    // 속성(data-lightboximg)을 가지고 있으면
+    // lightboxOverlay(줌 영역)에 클래스(visible)를 추가한다
+    // tip : 클래스(visible)의 기능은 display: none을 block로 바꾼다.
+    zoomInArea.classList.remove("hide");
+    // 클릭한 대상(elem)의 속성(data-lightboximg) 값을 newImage에 담기(getAttribute)
+    const newImage = elem.getAttribute("data-lightboximg");
+    console.log(newImage);
+    // lightboxImage(줌 영역 안의 이미지)의 속성(src)에 newImage값을 담기(setAttribute)
+    zoomInImg.setAttribute("src", newImage);
+  }
+
+  // 클릭한 대상의 class값(elemClass)이 lightbox-overlay 이거나 lightbox-overlay 이면
+  if (elemClass == "zoomInArea" || elemClass == "zoomInImg") {
+    // lightboxOverlay(줌 영역)에 클래스(visible)를 지운다.
+    zoomInArea.classList.add("hide");
+    // lightboxImage(줌 영역 안의 이미지)의 속성(src)에 ""(빈내용)을 담기(setAttribute)
+    zoomInImg.setAttribute("src", "");
+  }
 }
-
-// asideBtn[0].addEventListener("click", function (e) {
-//   e.preventDefault();
-//   modalNotPage.classList.remove("hide");
-// });
