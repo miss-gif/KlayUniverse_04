@@ -43,23 +43,15 @@ for (let i = 0; i < tabMenu.length; i++) {
 const asideBtn = document.querySelectorAll("aside>ul>li>a");
 const modalNotPage = document.querySelector(".modalNotPage");
 
-asideBtn[0].addEventListener("click", function (e) {
-  e.preventDefault();
-  modalNotPage.classList.remove("hide");
-});
-
-asideBtn[2].addEventListener("click", function (e) {
-  e.preventDefault();
-  modalNotPage.classList.remove("hide");
-});
-
-// 구현 문제로 보류
-// for (let i = 0; i < asideBtn.length; i++) {
-//   asideBtn[i].addEventListener("click", function (e) {
-//     e.preventDefault();
-//     modalNotPage.classList.remove("hide");
-//   });
-// }
+for (let i = 0; i < asideBtn.length; i++) {
+  asideBtn[i].addEventListener("click", function (e) {
+    if (e.target == asideBtn[1]) {
+    } else {
+      e.preventDefault();
+      modalNotPage.classList.remove("hide");
+    }
+  });
+}
 
 /* 모달창 닫기 */
 
@@ -135,20 +127,19 @@ for (let i = 0; i < languageBtn.length; i++) {
   });
 }
 
-/* 버튼 비활성화 */
+/* btnStyle 버튼 비활성화 */
 
 const btnStyle = document.querySelectorAll(".btnStyle");
 
-btnStyle[1].addEventListener("click", function (e) {
-  e.preventDefault();
-  modalNotPage.classList.remove("hide");
-});
-
-btnStyle[2].addEventListener("click", function (e) {
-  e.preventDefault();
-  modalNotPage.classList.remove("hide");
-  // console.log(e.target);
-});
+for (let i = 0; i < btnStyle.length; i++) {
+  btnStyle[i].addEventListener("click", function (e) {
+    if (e.target == btnStyle[0]) {
+    } else {
+      e.preventDefault();
+      modalNotPage.classList.remove("hide");
+    }
+  });
+}
 
 /* GALLERY 라이트박스 */
 const lightboxImg = document.querySelectorAll(".GALLERY>.swiper>ul>li>img");
@@ -157,6 +148,7 @@ for (let i = 0; i < lightboxImg.length; i++) {
   lightboxImg[i].addEventListener("click", function (e) {
     // alert(lightboxImg[i]);
     modalNotPage.classList.remove("hide");
+    modalNotPage.innerText = "blue";
     // console.log(e.target);
   });
 }
