@@ -131,6 +131,12 @@
           display: block;
         }
       }
+
+      .zoomInArea {
+        img {
+          max-width: 95%;
+        }
+      }
     }
 
     .modalNotPage {

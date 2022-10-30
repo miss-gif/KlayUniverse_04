@@ -553,9 +553,6 @@ main .GALLERY .zoomInArea {
   background-color: #000;
   z-index: 91;
 }
-main .GALLERY .zoomInArea:hover {
-  cursor: url(../img/mouse.png), auto;
-}
 main .GALLERY .zoomInArea img {
   position: absolute;
   top: 50%;
@@ -563,6 +560,7 @@ main .GALLERY .zoomInArea img {
   transform: translate(-50%, -50%);
   border: 3px solid #fff;
   border-radius: 0.9375rem;
+  cursor: url(../img/mouse.png), auto;
 }
 main .modalNotPage {
   position: fixed;

@@ -84,6 +84,9 @@
   main .GALLERY .swiper .swiper-pagination {
     display: block;
   }
+  main .GALLERY .zoomInArea img {
+    max-width: 95%;
+  }
   main .modalNotPage {
     width: 90%;
     height: 90%;
