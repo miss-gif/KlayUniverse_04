@@ -25,11 +25,9 @@ for (let i = 0; i < tabMenu.length; i++) {
     e.preventDefault();
     for (let j = 0; j < tabMenu.length; j++) {
       tabMenu[j].classList.remove("active");
+      tabList[j].classList.add("hide");
     }
     tabMenu[i].classList.add("active");
-    for (let k = 0; k < tabList.length; k++) {
-      tabList[k].classList.add("hide");
-    }
     tabList[i].classList.remove("hide");
   });
 }
