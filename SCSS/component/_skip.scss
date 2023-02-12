@@ -1,0 +1,22 @@
+/* 스킵 메뉴 */
+#skip {
+  position: fixed;
+  z-index: 99;
+
+  a {
+    position: absolute;
+    top: -9999px;
+    left: 0;
+    padding: 5px;
+    white-space: nowrap;
+    border: 1px solid #fff;
+    text-align: center;
+    background: #333;
+    min-width: 120px;
+
+    &:active,
+    &:focus {
+      top: 0;
+    }
+  }
+}

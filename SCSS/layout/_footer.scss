@@ -1,0 +1,107 @@
+/* footer 푸터 */
+footer {
+  h2 {
+    margin-top: 20vh;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    height: 30vh;
+  }
+
+  .footerInfo {
+    background-image: url(../img/footer/footerBG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    @include flexCenter;
+
+    .row {
+      div {
+        display: flex;
+        justify-content: space-between;
+
+        .leftBox {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-weight: 500;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+          }
+
+          form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            width: 20rem;
+            height: 3.125rem;
+            border-radius: 1rem;
+            background-color: #000;
+            box-sizing: border-box;
+
+            input {
+              width: 18.75rem;
+              font-size: 1rem;
+              outline: none;
+              background-color: transparent;
+              border: 0;
+              color: #fff;
+            }
+
+            input[type="submit"] {
+              width: 4.375rem;
+              font-size: 1rem;
+              background-color: transparent;
+              border: 0;
+              color: #5cffc0;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .rightBox {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          a {
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-decoration: underline;
+            padding-bottom: 1rem;
+
+            &:hover {
+              color: #5cffc0;
+            }
+          }
+
+          ul {
+            display: flex;
+
+            li {
+              a {
+                margin-left: 0.9375rem;
+
+                img {
+                  width: 2.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      > p {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 0.875rem;
+        line-height: 1.8;
+        color: #5cffc0;
+      }
+    }
+  }
+}

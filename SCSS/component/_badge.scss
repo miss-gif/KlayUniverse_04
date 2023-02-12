@@ -1,0 +1,111 @@
+/* aside 사이드 */
+aside {
+  position: fixed;
+  top: 13%;
+  right: 2%;
+  z-index: 91;
+
+  ul {
+    li {
+      width: 3rem;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, 0.3);
+      border: 2px solid #fff;
+      margin-bottom: 0.8rem;
+      border-radius: 50%;
+      box-sizing: border-box;
+      @include flexCenter;
+      transition: all 0.25s ease;
+      cursor: url(../img/mouse.png), auto;
+
+      &:hover {
+        background: linear-gradient(to right, #31f8ab, #39c2ee);
+        border: transparent;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        a {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &:hover {
+            &::after {
+              position: absolute;
+              top: 50%;
+              right: 4rem;
+              transform: translateY(-50%);
+              background-color: #fff;
+              color: #212121;
+              font-size: 1.125rem;
+              font-weight: 600;
+              border-radius: 0.5rem;
+              padding: 0.5rem 1rem;
+              box-sizing: border-box;
+              white-space: nowrap;
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 2.75rem;
+              transform: translateY(-50%);
+              width: 0;
+              height: 0;
+              border: 0.7rem solid transparent;
+              border-left: 1rem solid #fff;
+            }
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        a {
+          background-image: url(../img/aside/icon01.png);
+
+          &:hover {
+            background-image: url(../img/aside/icon01_hover.png);
+
+            &::after {
+              content: "ConnectWallet";
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        a {
+          background-image: url(../img/aside/icon02.png);
+
+          &:hover {
+            background-image: url(../img/aside/icon02_hover.png);
+
+            &::after {
+              content: "Connect Whitepaper";
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        a {
+          background-image: url(../img/aside/icon03.png);
+
+          &:hover {
+            background-image: url(../img/aside/icon03_hover.png);
+
+            &::after {
+              content: "UNIVERSE Search";
+            }
+          }
+        }
+      }
+    }
+  }
+}

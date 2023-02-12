@@ -1,297 +1,6 @@
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-
-  body::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    height: 10%;
-    background: #5cffc0;
-    border-radius: 3px;
-  }
-
-  body::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  body {
-    font-family: "Lato", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: #101010;
-    // background-color: orange; // 임시코드
-    color: #fff;
-
-    main {
-      background-image: url(../img/grid_background.png);
-    }
-
-    a {
-      transition: all 0.25s ease;
-      color: #fff;
-
-      &:hover {
-        cursor: url(../img/mouse.png), auto;
-      }
-    }
-
-    .inner {
-      width: 1360px;
-      margin: 0 auto;
-    }
-
-    .row {
-      padding: 0 2rem;
-      box-sizing: border-box;
-    }
-
-    .active {
-      color: #5cffc0;
-    }
-
-    .hide {
-      display: none;
-      z-index: -99;
-      width: 0;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .btnStyle {
-      width: 100%;
-      max-width: 17.5rem;
-      height: 3.75rem;
-      font-size: 1.25rem;
-      border-radius: 1.875rem;
-      background-color: transparent;
-      border: 1px solid #fff;
-      text-align: center;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &:hover {
-        background: linear-gradient(to right, #31f8ab, #39c2ee);
-        border: transparent;
-        color: #101010;
-      }
-    }
-  }
-}
-
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* 스킵 메뉴 */
-#skip {
-  position: fixed;
-  z-index: 99;
-
-  a {
-    position: absolute;
-    top: -9999px;
-    left: 0;
-    padding: 5px;
-    white-space: nowrap;
-    border: 1px solid #fff;
-    text-align: center;
-    background: #333;
-    min-width: 120px;
-
-    &:active,
-    &:focus {
-      top: 0;
-    }
-  }
-}
-
-/* header 헤더 */
-
-header {
-  position: fixed;
-  width: 100%;
-  height: 4.375rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 90;
-  @include flexCenter;
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    nav {
-      width: 100%;
-
-      .languageBtn {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 0.625rem;
-
-        li {
-          position: relative;
-
-          &:nth-child(1)::after {
-            position: absolute;
-            content: "";
-            top: 55%;
-            right: -0.5rem;
-            transform: translate(0, -50%);
-            background-color: #fff;
-            width: 1px;
-            height: 70%;
-          }
-
-          button {
-            margin-left: 1rem;
-            transition: all 0.25s ease;
-
-            &:hover {
-              cursor: url(../img/mouse.png), auto;
-            }
-          }
-        }
-      }
-
-      .menu {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        li {
-          a {
-            &:hover {
-              color: #5cffc0;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-/* aside 사이드 */
-aside {
-  position: fixed;
-  top: 13%;
-  right: 2%;
-  z-index: 91;
-
-  ul {
-    li {
-      width: 3rem;
-      height: 3rem;
-      background-color: rgba(0, 0, 0, 0.3);
-      border: 2px solid #fff;
-      margin-bottom: 0.8rem;
-      border-radius: 50%;
-      box-sizing: border-box;
-      @include flexCenter;
-      transition: all 0.25s ease;
-      cursor: url(../img/mouse.png), auto;
-
-      &:hover {
-        background: linear-gradient(to right, #31f8ab, #39c2ee);
-        border: transparent;
-      }
-
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3) {
-        a {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          background-position: 50%;
-          background-repeat: no-repeat;
-          background-size: cover;
-
-          &:hover {
-            &::after {
-              position: absolute;
-              top: 50%;
-              right: 4rem;
-              transform: translateY(-50%);
-              background-color: #fff;
-              color: #212121;
-              font-size: 1.125rem;
-              font-weight: 600;
-              border-radius: 0.5rem;
-              padding: 0.5rem 1rem;
-              box-sizing: border-box;
-              white-space: nowrap;
-            }
-
-            &::before {
-              content: "";
-              position: absolute;
-              top: 50%;
-              right: 2.75rem;
-              transform: translateY(-50%);
-              width: 0;
-              height: 0;
-              border: 0.7rem solid transparent;
-              border-left: 1rem solid #fff;
-            }
-          }
-        }
-      }
-
-      &:nth-child(1) {
-        a {
-          background-image: url(../img/aside/icon01.png);
-
-          &:hover {
-            background-image: url(../img/aside/icon01_hover.png);
-
-            &::after {
-              content: "ConnectWallet";
-            }
-          }
-        }
-      }
-
-      &:nth-child(2) {
-        a {
-          background-image: url(../img/aside/icon02.png);
-
-          &:hover {
-            background-image: url(../img/aside/icon02_hover.png);
-
-            &::after {
-              content: "Connect Whitepaper";
-            }
-          }
-        }
-      }
-
-      &:nth-child(3) {
-        a {
-          background-image: url(../img/aside/icon03.png);
-
-          &:hover {
-            background-image: url(../img/aside/icon03_hover.png);
-
-            &::after {
-              content: "UNIVERSE Search";
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 /* main 메인 */
 
 main {
-
   /* section 공통 */
   section {
     position: relative;
@@ -335,7 +44,7 @@ main {
       z-index: -2;
     }
 
-    >h2 {
+    > h2 {
       font-size: 4.5rem;
       font-weight: 600;
       line-height: 1.5;
@@ -347,7 +56,7 @@ main {
       }
     }
 
-    >.mouseScroll {
+    > .mouseScroll {
       position: absolute;
       bottom: 1.875rem;
       width: 0.625rem;
@@ -355,7 +64,7 @@ main {
       align-items: center;
       flex-direction: column;
 
-      >img {
+      > img {
         margin: 0.25rem;
         animation-name: move; // 애니메이션 명
         animation-duration: 0.4s; // 완료까지 걸리는 시간 설정
@@ -370,7 +79,7 @@ main {
         }
       }
 
-      >p {
+      > p {
         margin-top: 0.375rem;
         color: rgba(#5cffc0, 0.3);
       }
@@ -536,7 +245,7 @@ main {
 
   /* section 섹션5 TEAM */
   .TEAM {
-    >p {
+    > p {
       font-size: 1.25rem;
       line-height: 2;
       text-align: center;
@@ -682,9 +391,9 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);
         border: 3px solid #fff;
-        border-radius: 0.9375rem;   
-        cursor: url(../img/mouse.png), auto; 
-      }      
+        border-radius: 0.9375rem;
+        cursor: url(../img/mouse.png), auto;
+      }
     }
   }
 
@@ -725,114 +434,6 @@ main {
       font-size: 1.75rem;
       font-weight: 600;
       margin-top: 3rem;
-    }
-  }
-}
-
-/* footer 푸터 */
-footer {
-  h2 {
-    margin-top: 20vh;
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 1.5;
-    text-align: center;
-    height: 30vh;
-  }
-
-  .footerInfo {
-    background-image: url(../img/footer/footerBG.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 50vh;
-    @include flexCenter;
-
-    .row {
-      div {
-        display: flex;
-        justify-content: space-between;
-
-        .leftBox {
-          display: flex;
-          flex-direction: column;
-
-          p {
-            font-weight: 500;
-            font-size: 1.25rem;
-            margin-bottom: 1.5rem;
-          }
-
-          form {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            width: 20rem;
-            height: 3.125rem;
-            border-radius: 1rem;
-            background-color: #000;
-            box-sizing: border-box;
-
-            input {
-              width: 18.75rem;
-              font-size: 1rem;
-              outline: none;
-              background-color: transparent;
-              border: 0;
-              color: #fff;
-            }
-
-            input[type="submit"] {
-              width: 4.375rem;
-              font-size: 1rem;
-              background-color: transparent;
-              border: 0;
-              color: #5cffc0;
-              font-weight: 700;
-            }
-          }
-        }
-
-        .rightBox {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-
-          a {
-            font-size: 1.25rem;
-            font-weight: 600;
-            text-decoration: underline;
-            padding-bottom: 1rem;
-
-            &:hover {
-              color: #5cffc0;
-            }
-          }
-
-          ul {
-            display: flex;
-
-            li {
-              a {
-                margin-left: 0.9375rem;
-
-                img {
-                  width: 2.5rem;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      >p {
-        margin-top: 3rem;
-        text-align: center;
-        font-size: 0.875rem;
-        line-height: 1.8;
-        color: #5cffc0;
-      }
     }
   }
 }

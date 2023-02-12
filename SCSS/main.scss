@@ -1,0 +1,85 @@
+/* 초록 */
+@import "abstracts/variable"; // 변수
+@import "abstracts/mixin"; // 믹스인
+/* 베이스 */
+@import "base/reset"; // 리셋
+@import "base/common"; // 공동 CSS
+@import "base/typography"; // 텍스트
+/* 컴포넌트 */
+@import "component/gnb"; //
+@import "component/skip"; //
+@import "component/scrollbar"; //
+@import "component/badge"; //
+/* 레이아웃 */
+@import "layout/header"; // 헤더
+@import "layout/main"; // 헤더
+@import "layout/footer"; // 헤더
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+  body {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #101010;
+    color: #fff;
+
+    main {
+      background-image: url(../img/grid_background.png);
+    }
+
+    a {
+      transition: all 0.25s ease;
+      color: #fff;
+
+      &:hover {
+        cursor: url(../img/mouse.png), auto;
+      }
+    }
+
+    .inner {
+      width: 1360px;
+      margin: 0 auto;
+    }
+
+    .row {
+      padding: 0 2rem;
+      box-sizing: border-box;
+    }
+
+    .active {
+      color: #5cffc0;
+    }
+
+    .hide {
+      display: none;
+      z-index: -99;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .btnStyle {
+      width: 100%;
+      max-width: 17.5rem;
+      height: 3.75rem;
+      font-size: 1.25rem;
+      border-radius: 1.875rem;
+      background-color: transparent;
+      border: 1px solid #fff;
+      text-align: center;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: linear-gradient(to right, #31f8ab, #39c2ee);
+        border: transparent;
+        color: #101010;
+      }
+    }
+  }
+}

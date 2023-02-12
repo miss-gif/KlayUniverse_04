@@ -1,74 +1,216 @@
 @charset "UTF-8";
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-html body::-webkit-scrollbar {
-  width: 6px;
-}
-html body::-webkit-scrollbar-thumb {
-  height: 10%;
-  background: #5cffc0;
-  border-radius: 3px;
-}
-html body::-webkit-scrollbar-track {
-  background: transparent;
-}
-html body {
-  font-family: "Lato", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  background-color: #101010;
-  color: #fff;
-}
-html body main {
-  background-image: url(../img/grid_background.png);
-}
-html body a {
-  transition: all 0.25s ease;
-  color: #fff;
-}
-html body a:hover {
-  cursor: url(../img/mouse.png), auto;
-}
-html body .inner {
-  width: 1360px;
-  margin: 0 auto;
-}
-html body .row {
-  padding: 0 2rem;
-  box-sizing: border-box;
-}
-html body .active {
-  color: #5cffc0;
-}
-html body .hide {
-  display: none;
-  z-index: -99;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-html body .btnStyle {
-  width: 100%;
-  max-width: 17.5rem;
-  height: 3.75rem;
-  font-size: 1.25rem;
-  border-radius: 1.875rem;
-  background-color: transparent;
-  border: 1px solid #fff;
-  text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-html body .btnStyle:hover {
-  background: linear-gradient(to right, #31f8ab, #39c2ee);
-  border: transparent;
-  color: #101010;
+/* 초록 */
+/* 베이스 */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+}
+
+/* IR 효과 */
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+/* input style */
+input {
+  background-image: none;
+}
+
+input[type=button],
+input[type=reset],
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search],
+input[type=tel],
+input[type=email] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input:checked[type=checkbox] {
+  background-color: #666;
+  -webkit-appearance: checkbox;
+}
+
+/* 컴포넌트 */
 /* 스킵 메뉴 */
 #skip {
   position: fixed;
@@ -89,57 +231,18 @@ html body .btnStyle:hover {
   top: 0;
 }
 
-/* header 헤더 */
-header {
-  position: fixed;
-  width: 100%;
-  height: 4.375rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 90;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body::-webkit-scrollbar {
+  width: 6px;
 }
-header .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #5cffc0;
+  border-radius: 3px;
 }
-header .header nav {
-  width: 100%;
-}
-header .header nav .languageBtn {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 0.625rem;
-}
-header .header nav .languageBtn li {
-  position: relative;
-}
-header .header nav .languageBtn li:nth-child(1)::after {
-  position: absolute;
-  content: "";
-  top: 55%;
-  right: -0.5rem;
-  transform: translate(0, -50%);
-  background-color: #fff;
-  width: 1px;
-  height: 70%;
-}
-header .header nav .languageBtn li button {
-  margin-left: 1rem;
-  transition: all 0.25s ease;
-}
-header .header nav .languageBtn li button:hover {
-  cursor: url(../img/mouse.png), auto;
-}
-header .header nav .menu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-header .header nav .menu li a:hover {
-  color: #5cffc0;
+
+body::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 /* aside 사이드 */
@@ -228,6 +331,60 @@ aside ul li:nth-child(3) a:hover::after {
   content: "UNIVERSE Search";
 }
 
+/* 레이아웃 */
+/* header 헤더 */
+header {
+  position: fixed;
+  width: 100%;
+  height: 4.375rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header .header nav {
+  width: 100%;
+}
+header .header nav .languageBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.625rem;
+}
+header .header nav .languageBtn li {
+  position: relative;
+}
+header .header nav .languageBtn li:nth-child(1)::after {
+  position: absolute;
+  content: "";
+  top: 55%;
+  right: -0.5rem;
+  transform: translate(0, -50%);
+  background-color: #fff;
+  width: 1px;
+  height: 70%;
+}
+header .header nav .languageBtn li button {
+  margin-left: 1rem;
+  transition: all 0.25s ease;
+}
+header .header nav .languageBtn li button:hover {
+  cursor: url(../img/mouse.png), auto;
+}
+header .header nav .menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .header nav .menu li a:hover {
+  color: #5cffc0;
+}
+
 /* main 메인 */
 main {
   /* section 공통 */
@@ -299,21 +456,11 @@ main .mainVisual > .mouseScroll {
 }
 main .mainVisual > .mouseScroll > img {
   margin: 0.25rem;
-  -webkit-animation-name: move;
-          animation-name: move;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-@-webkit-keyframes move {
-  100% {
-    margin: 0px;
-  }
+  animation-name: move;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 @keyframes move {
   100% {
@@ -688,4 +835,63 @@ footer .footerInfo .row > p {
   font-size: 0.875rem;
   line-height: 1.8;
   color: #5cffc0;
-}/*# sourceMappingURL=main.css.map */
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+html body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #101010;
+  color: #fff;
+}
+html body main {
+  background-image: url(../img/grid_background.png);
+}
+html body a {
+  transition: all 0.25s ease;
+  color: #fff;
+}
+html body a:hover {
+  cursor: url(../img/mouse.png), auto;
+}
+html body .inner {
+  width: 1360px;
+  margin: 0 auto;
+}
+html body .row {
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+html body .active {
+  color: #5cffc0;
+}
+html body .hide {
+  display: none;
+  z-index: -99;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+html body .btnStyle {
+  width: 100%;
+  max-width: 17.5rem;
+  height: 3.75rem;
+  font-size: 1.25rem;
+  border-radius: 1.875rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body .btnStyle:hover {
+  background: linear-gradient(to right, #31f8ab, #39c2ee);
+  border: transparent;
+  color: #101010;
+}
